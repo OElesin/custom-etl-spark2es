@@ -1,48 +1,55 @@
-# Sample Spark project
+# Custom ETL Spark2ES
 
 ## Highlights
 
-- Sane compiler flags to scala
-- `sbt console` starts a Spark and SparkSQL context
-- Advanced static analyzer reports possible bugs and bad coding practices
+- Load Data from MSSQL Database into Elasticsearch
+- Save the data into HDFS with either Avro or Parquet
+- Can be extended for other custom uses
 
 ## Libraries included
 
-- Spark 1.3.0
-- Scala 2.11.6
-- ScalaTest 2.2.4
-- ScalaCheck 1.12.2
+- Spark 1.6.0
+- Scala 2.10.6
+- Elasticsearch-Spark 2.2.0-m1
+- Microsoft SQL Server JDBC 4.0
+- Scopt 3.5.0
 
-## Static Analyzer
+## Usage
 
-### linter (https://github.com/HairyFotr/linter)
+You can run on local mode or in your spark cluster. Just ensure you have your configurations correctly. However, we strongly advise you run in cluster mode for better performance.
 
-Usage: automatically runs during Compilation and evaluation in console
+The compiled jar file also accepts command line arguments
 
-### sbt-scapegoat (https://github.com/sksamuel/sbt-scapegoat)
+Usage: scopt [options]
 
-Usage: automatically runs during Compilation
+  `-l, --cache-file <file>  cacheFile is a required property where query last id is cached for later use`
 
-Open target/scala-2.11/scapegoat.xml or target/scala-2.11/scapegoat.html
+  `-d, --warehouse-dir <hdfs-path> wareHouseDir is the HDFS warehouse directory where data will be saved`
 
-## Coding Style Checker
+  `-f, --file-format <value> fileFormat is the file format in which data is saved in the HDFS warehouse`
 
-### ScalaStyle
+  `-c, --connect <connection-string> JDBC Connection string. Currently supported JDBC drivers are MYSQL, ORACLE and MSSQL.`
 
-Usage: ```sbt scalastyle```
+  `-t, --table <table-name> Provide database table name to pull data from.`
 
-Open target/scalastyle-result.xml
+  `-e, --es-host <host>:<port> Elasticsearch host and port together. Format: 197.253.1.252:9200`
 
-Check level are all "warn", change to "error" if you want to reject code changes when integrated with CI tools.
+  `-r, --es-resource index:type Elasticsearch resource i.e index and type. Format: index_name/type_name`
+
+  `-h, --help               Usage: type --help or -h to see the options`
+
+
+**To run**
+
+spark-submit <fat-jar-file.jar> [options]
 
 ## Issues
+For additional features, log issues and we will attend to them
 
-### fork limitation in sbt console
+### Contribution
 
-Currently Test and run will fork a JVM. The reason it's necessary is that SBT's classloader doesn't work well with Spark and Spark shell.
-
-However `sbt console` does not recognize fork key right now. It might throw ScalaReflectionException, etc.
+We welcome pull requests as we hope that this can become a generic ETL tool built on Spark
 
 ## Author
 
-- Jianshi Huang (jianshuang@paypal.com; jianshi.huang@gmail.com)
+- Olalekan Elesin (elesin.olalekan@gmail.com) and Simeon Babatunde (babatunde.simeon@gmail.com)
