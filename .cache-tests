@@ -1,0 +1,73 @@
+format version: 5
+output mode:
+1 items
+0 -> multiple
+output directories:
+2 items
+/home/olalekan-elesin/workspace/tolletl/src/test/resources -> /home/olalekan-elesin/workspace/tolletl/bin
+/home/olalekan-elesin/workspace/tolletl/src/test/scala -> /home/olalekan-elesin/workspace/tolletl/bin
+compile options:
+10 items
+0 -> -javabootclasspath
+1 -> /usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/cldrdata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/jaccess.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/icedtea-sound.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/localedata.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunjce_provider.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/nashorn.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/zipfs.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunec.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/java-atk-wrapper.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/sunpkcs11.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext/dnsns.jar
+2 -> -javaextdirs
+3 ->  
+4 -> -bootclasspath
+5 -> /home/olalekan-elesin/Downloads/eclipse/plugins/org.scala-lang.scala-library_2.11.7.v20150622-112736-1fbce4612c.jar
+6 -> -deprecation
+7 -> -unchecked
+8 -> -encoding
+9 -> UTF-8
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.7
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> false
+products:
+0 items
+binary dependencies:
+0 items
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+0 items
+used names:
+0 items
+product stamps:
+0 items
+source stamps:
+0 items
+binary stamps:
+0 items
+class names:
+0 items
+internal apis:
+0 items
+external apis:
+0 items
+source infos:
+0 items
+compilations:
+2 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVQaPgwl1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAKy9ob21lL29sYWxla2FuLWVsZXNpbi93b3Jrc3BhY2UvdG9sbGV0bC9iaW50ADYvaG9tZS9vbGFsZWthbi1lbGVzaW4vd29ya3NwYWNlL3RvbGxldGwvc3JjL3Rlc3Qvc2NhbGFzcQB+AAV0ACsvaG9tZS9vbGFsZWthbi1lbGVzaW4vd29ya3NwYWNlL3RvbGxldGwvYmludAA6L2hvbWUvb2xhbGVrYW4tZWxlc2luL3dvcmtzcGFjZS90b2xsZXRsL3NyYy90ZXN0L3Jlc291cmNlcw==
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABVqOH9jt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAnNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAKy9ob21lL29sYWxla2FuLWVsZXNpbi93b3Jrc3BhY2UvdG9sbGV0bC9iaW50ADYvaG9tZS9vbGFsZWthbi1lbGVzaW4vd29ya3NwYWNlL3RvbGxldGwvc3JjL3Rlc3Qvc2NhbGFzcQB+AAV0ACsvaG9tZS9vbGFsZWthbi1lbGVzaW4vd29ya3NwYWNlL3RvbGxldGwvYmludAA6L2hvbWUvb2xhbGVrYW4tZWxlc2luL3dvcmtzcGFjZS90b2xsZXRsL3NyYy90ZXN0L3Jlc291cmNlcw==
